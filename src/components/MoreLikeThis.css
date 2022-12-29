@@ -1,0 +1,54 @@
+:root {
+    --netflixRed: #de0611;
+    --netflixBlack: #000000;
+    --netflixWhite: #ffffff;
+    --netflixClearGray: #333333;
+    --netflixHardGray: #181818;
+    --netflixSoftGray: #a3a3a3;
+}
+
+.more-like-this-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.more-like-this-title h2{
+    margin: 20px 0 20px 0;
+    color: var(--netflixWhite);
+    font-size: 30px;
+}
+
+.more-like-this-img-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    grid-gap: 10px;
+}
+.movie-img{
+    width: auto;
+}
+.movie-img img{
+    width: 100%;
+}
+
+/* media query mobile */
+@media screen and (min-width: 350px) and (max-width: 600px){
+    .more-like-this-img-grid{
+        grid-template-columns: auto auto;
+    }
+}
+
+/* media query tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .more-like-this-img-grid{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* media query desktop */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    .more-like-this-img-grid{
+        grid-template-columns: auto auto auto auto;
+    }
+}

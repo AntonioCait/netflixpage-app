@@ -1,0 +1,166 @@
+:root {
+    --netflixRed: #de0611;
+    --netflixBlack: #000000;
+    --netflixWhite: #ffffff;
+    --netflixClearGray: #333333;
+    --netflixHardGray: #181818;
+    --netflixSoftGray: #a3a3a3;
+
+}
+
+.episodes{
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 20px 0px 50px 0px;
+    background-color: var(--netflixHardGray);
+}
+
+.series-title{
+    display: flex;
+    align-items: center;
+}
+
+.series-title .titleSection{
+    font-size: 30px;
+    color: var(--netflixWhite);
+}
+
+.series-title .movieName{
+    font-size: 20px;
+    color: var(--netflixSoftGray);
+}
+
+.series-title span{
+    margin: 0 10px 0 10px;
+    font-size: 24px;
+    color: var(--netflixWhite);
+}
+
+.typeOfSeries{
+    color: var(--netflixWhite);
+    padding: 10px 0px 10px 0px;
+}
+
+.seriesYear{
+    color: var(--netflixWhite);
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+}
+
+.seriesDescription{
+    color: var(--netflixSoftGray);
+    padding: 2px 0px 10px 0px;
+    width: 50%;
+}
+
+/* episodes card */
+.episodeCard{
+    padding: 1px;
+    width: 335px;
+}
+
+.episodeCard img{
+    width: 100%;
+}
+
+.episodeCard__info{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+}
+
+.episodeCard__info p{
+    color: var(--netflixSoftGray);
+    font-size: 12px;
+}
+
+.episodeTitleBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.episodeTitleBox h3{
+    color: var(--netflixWhite);
+    font-size: 16px;
+}
+
+.episodeTitleBox p{
+    color: var(--netflixSoftGray);
+    font-size: 14px;
+}
+
+.episode-cards-grid{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+/* media query mobile */
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    .series-title .titleSection{
+        font-size: 20px;
+    }
+
+    .series-title .movieName{
+        font-size: 16px;
+    }
+
+    .series-title span{
+        margin: 0 5px 0 5px;
+        font-size: 16px;
+    }
+
+    .seriesDescription{
+        width: 100%;
+    }
+
+    .episodeCard__info p{
+        font-size: 10px;
+    }
+
+    .episodeTitleBox h3{
+        font-size: 14px;
+    }
+
+    .episodeTitleBox p{
+        font-size: 12px;
+    }
+
+    .episode-cards-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .episodeCard{
+        width: 100%;
+    }
+}
+
+/* media query tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .episode-cards-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .episodeCard{
+        width: 100%;
+    }
+}
+
+/* media query desktop */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .episode-cards-grid{
+        grid-template-columns: repeat(3, auto);
+        gap: 5px;
+    }
+
+    .episodeCard{
+        width: 100%;
+    }
+    
+}

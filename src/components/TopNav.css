@@ -1,0 +1,88 @@
+/* color variables */
+
+:root {
+    --netflixRed: #de0611;
+    --netflixBlack: #000000;
+    --netflixWhite: #ffffff;
+}
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: var(--netflixBlack);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Poppins', sans-serif;
+/*    nav always on top*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-icon{
+    height: 80px;
+}
+
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-elements p, a{
+    margin-right: 20px;
+}
+
+.nav-elements > p{
+    color: var(--netflixWhite);
+    font-size: 14px;
+}
+
+.nav-joinus{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 3px;
+    background-color: var(--netflixRed);
+    color: var(--netflixWhite);
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-signin{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 3px;
+    border: 0.3px solid var(--netflixWhite);
+    color: var(--netflixWhite);
+    font-size: 14px;
+    background-color: transparent;
+    /* remove link style */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*media query mobile*/
+@media screen and (min-width: 350px) and (max-width: 768px) {
+    .nav-container{
+        width: 100%;
+    }
+    .nav-elements p{
+        display: none;
+    }
+
+    .nav-elements a{
+        padding: 5px 7px  5px 7px;
+        font-size: 10px;
+    }
+}

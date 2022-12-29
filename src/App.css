@@ -1,0 +1,14 @@
+:root {
+    --netflixRed: #de0611;
+    --netflixBlack: #000000;
+    --netflixWhite: #ffffff;
+    --netflixClearGray: #333333;
+    --netflixHardGray: #181818;
+    --netflixSoftGray: #a3a3a3;
+
+}
+
+.App{
+    background-color: var(--netflixHardGray);
+    font-family: Arial, Helvetica, sans-serif;
+}
